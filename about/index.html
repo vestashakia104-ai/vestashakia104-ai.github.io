@@ -1,0 +1,111 @@
+<!-- studio-page -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — NVO MAHNITRON PE</title>
+<meta name="description" content="Our development work revolves around bringing new entertainment concepts to smartphones. We value intuitive interfaces, creative mechanics and consistent performance.">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NVO MAHNITRON PE">
+<meta property="og:title" content="About — NVO MAHNITRON PE">
+<meta property="og:description" content="Our development work revolves around bringing new entertainment concepts to smartphones. We value intuitive interfaces, creative mechanics and consistent performance.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/fonts/sora.css">
+<style>
+:root {
+  --bg: hsl(292 0% 99%);
+  --soft: hsl(292 0% 95%);
+  --soft2: hsl(292 0% 91%);
+  --ink: hsl(292 0% 12%);
+  --muted: hsl(292 0% 38%);
+  --line: hsl(292 0% 89%);
+  --accent: hsl(292 62% 40%);
+  --accent2: hsl(320 62% 32%);
+  --sans: Sora, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--sans); }
+.wrap { max-width: 66rem; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2rem); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.1rem; padding-bottom: 1.1rem; flex-wrap: wrap; }
+.nav .brand { font-weight: 700; font-size: 1.1rem; text-decoration: none; letter-spacing: -.02em; }
+.nav ul { display: flex; gap: .4rem; list-style: none; margin: 0; padding: 0; }
+.nav ul a { display: block; padding: .45rem .85rem; border-radius: 999px; text-decoration: none; font-size: .92rem; color: var(--muted); }
+.nav ul a:hover { background: var(--soft); color: var(--ink); }
+.nav ul a[aria-current] { background: var(--soft); color: var(--accent); font-weight: 600; }
+.band { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; overflow: hidden; }
+.band .wrap { display: grid; gap: 2rem; padding-top: clamp(2.5rem, 7vw, 4.5rem); padding-bottom: clamp(2.5rem, 7vw, 4.5rem); align-items: center; }
+.band .icon { width: 84px; height: 84px; border-radius: 20px; border: 3px solid rgba(255,255,255,.85); margin-bottom: 1.2rem; }
+.band h1 { margin: 0; font-size: clamp(2.2rem, 6.5vw, 3.8rem); line-height: 1.02; letter-spacing: -.035em; font-weight: 700; text-wrap: balance; }
+.band p { margin: 1rem 0 0; max-width: 40ch; opacity: .92; font-size: 1.1rem; }
+.band .actions { margin-top: 1.5rem; }
+.band .btn-play { background: #fff; color: var(--accent); }
+.band .btn-ghost { border-color: rgba(255,255,255,.55); color: #fff; }
+.band .btn-ghost:hover { background: rgba(255,255,255,.14); }
+.fan { display: flex; justify-content: center; align-items: flex-end; padding: 1rem 0 .5rem; }
+.fan img { width: clamp(104px, 24vw, 176px); border-radius: 16px; border: 3px solid rgba(255,255,255,.92); box-shadow: 0 22px 44px rgba(0,0,0,.28); }
+.fan img:nth-child(1) { transform: rotate(-6deg) translateY(12px); margin-right: -16px; }
+.fan img:nth-child(2) { position: relative; z-index: 2; transform: translateY(-16px); }
+.fan img:nth-child(3) { transform: rotate(6deg) translateY(12px); margin-left: -16px; }
+.actions { display: flex; gap: .55rem; flex-wrap: wrap; margin: 0; }
+.btn { display: inline-flex; align-items: center; gap: .45rem; padding: .62rem 1.05rem; border-radius: 999px; font-size: .88rem; font-weight: 600; line-height: 1; text-decoration: none; border: 1px solid transparent; transition: background-color .12s, border-color .12s, color .12s; }
+.btn svg { width: 14px; height: 14px; }
+.btn-play { background: var(--accent); color: #fff; }
+.btn-play:hover { filter: brightness(1.1); }
+.btn-ghost { border-color: var(--line); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+.btn:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.intro { padding: clamp(2.5rem, 6vw, 4rem) 0 1rem; display: grid; gap: .8rem; }
+.intro h2, .page h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.4rem); letter-spacing: -.03em; line-height: 1.1; max-width: 22ch; }
+.intro p, .page p { margin: 0; color: var(--muted); max-width: 56ch; }
+.list { margin: 1.5rem 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.list li { display: grid; grid-template-columns: 56px 1fr; gap: 1rem; align-items: center; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+.list .icon { width: 56px; height: 56px; border-radius: 14px; background: var(--soft); }
+.list h3 { margin: 0; font-size: 1.05rem; letter-spacing: -.01em; }
+.list .short { margin: .1rem 0 0; color: var(--muted); font-size: .92rem; }
+.list .actions { grid-column: 1 / -1; padding-left: calc(56px + 1rem); }
+.page { padding: clamp(2.5rem, 7vw, 4.5rem) 0; display: grid; gap: 1.2rem; }
+.tiles { display: grid; gap: 1rem; margin-top: 1rem; }
+.tile { display: flex; align-items: center; gap: .9rem; padding: 1.2rem 1.3rem; border-radius: 18px; background: var(--soft); text-decoration: none; font-size: 1.1rem; font-weight: 600; }
+.tile svg { width: 22px; height: 22px; color: var(--accent); flex: 0 0 22px; }
+.tile:hover { background: var(--soft2); }
+footer { margin-top: 3rem; border-top: 1px solid var(--line); padding: 1.6rem 0 3rem; color: var(--muted); font-size: .86rem; display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; justify-content: space-between; }
+footer nav { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--accent); }
+@media (min-width: 800px) {
+  .band .wrap { grid-template-columns: 1.1fr .9fr; }
+  .list li { grid-template-columns: 56px 1fr auto; }
+  .list .actions { grid-column: auto; padding-left: 0; }
+  .tiles { grid-template-columns: 1fr 1fr; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrap nav">
+  <a class="brand" href="/">NVO MAHNITRON PE</a>
+  <nav><ul><li><a href="/">Home</a></li><li><a href="/about/" aria-current=page>About</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
+</div>
+<main class="wrap">
+  <section class="page">
+    <h1>About NVO MAHNITRON PE</h1>
+    <p>Our development work revolves around bringing new entertainment concepts to smartphones. We value intuitive interfaces, creative mechanics and consistent performance.</p>
+    <p>Everything we publish is listed here with its store page and privacy policy.</p>
+    
+  </section>
+</main>
+<footer class="wrap">
+  <span>&copy; 2026 NVO MAHNITRON PE &middot; nvomahnitronpe.online</span>
+  <nav><a href="/">Home</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+</footer>
+</body>
+</html>
